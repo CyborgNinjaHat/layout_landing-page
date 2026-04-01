@@ -27,11 +27,18 @@ function closeOverlayMenu() {
   focusMenu.deactivate();
 }
 
-elements.openButton.addEventListener('click', openOverlayMenu);
-elements.closeButton.addEventListener('click', closeOverlayMenu);
+function handleKeyDown(event) {
+  if (event.key === 'Escape') {
+    closeOverlayMenu();
+  }
+}
 
 function handleHashChange() {
   closeOverlayMenu();
 }
 
+window.addEventListener('keydown', handleKeyDown);
 window.addEventListener('hashchange', handleHashChange);
+
+elements.openButton.addEventListener('click', openOverlayMenu);
+elements.closeButton.addEventListener('click', closeOverlayMenu);
