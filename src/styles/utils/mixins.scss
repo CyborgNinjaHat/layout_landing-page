@@ -1,13 +1,13 @@
 @use "variables";
 
 @mixin on-tablet {
-  @media (width >= variables.$width-min-tablet) {
+  @media (width >= 768px) {
     @content;
   }
 }
 
 @mixin on-desktop {
-  @media (width >= variables.$width-min-desktop) {
+  @media (width >= 1200px) {
     @content;
   }
 }

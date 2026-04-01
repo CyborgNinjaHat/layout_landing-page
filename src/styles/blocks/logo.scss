@@ -2,7 +2,7 @@
 @use "../utils/variables";
 
 .logo {
-  display: flex;
+  display: block;
   width: 130px;
   height: 38px;
 
@@ -14,12 +14,7 @@
   @include mixins.hover(transform, scale(1.2));
 
   &__image {
-    aspect-ratio: 1;
     width: 100%;
-    fill: variables.$color-text-primary;
-
-    &--menu {
-      fill: variables.$color-text-secondary;
-    }
+    height: 100%;
   }
 }
