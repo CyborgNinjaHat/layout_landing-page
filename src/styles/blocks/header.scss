@@ -1,13 +1,15 @@
+@use "../utils/mixins";
+
 .header {
   background-image: url('/assets/images/header-bg.avif');
   background-position: right;
   background-size: cover;
 
-  @include on-tablet {
+  @include mixins.on-tablet {
     background-image: url('/assets/images/header-bg-tablet.avif');
   }
 
-  @include on-desktop {
+  @include mixins.on-desktop {
     background-image: url('/assets/images/header-bg-desktop.avif');
   }
 
@@ -23,7 +25,7 @@
   &__bottom {
     padding-block-end: 88px;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       padding-block-end: 130px;
     }
   }
@@ -35,7 +37,7 @@
     text-align: center;
     letter-spacing: -1.5px;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       font-size: 64px;
     }
   }

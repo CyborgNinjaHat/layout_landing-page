@@ -1,12 +1,14 @@
+@use "../utils/mixins";
+
 .icon {
   display: block;
   aspect-ratio: 1;
   width: 24px;
   background-size: cover;
 
-  @include hover(transform, scale(1.2));
+  @include mixins.hover(transform, scale(1.2));
 
-  @include on-tablet {
+  @include mixins.on-tablet {
     width: 32px;
   }
 

@@ -1,3 +1,5 @@
+@use "../utils/variables";
+
 .button {
   cursor: pointer;
 
@@ -11,20 +13,20 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
-  color: $color-text-secondary;
+  color: variables.$color-text-secondary;
 
-  background-color: $color-bg-button;
+  background-color: variables.$color-bg-button;
   border-radius: 40px;
   outline: none;
 
-  transition: box-shadow $duration-transition;
+  transition: box-shadow variables.$duration-transition;
 
   &:hover,
   &:focus {
-    box-shadow: 1px 4px 16px 0 $color-shadow-soft;
+    box-shadow: 1px 4px 16px 0 variables.$color-shadow-soft;
   }
 
   &:active {
-    box-shadow: 1px 4px 16px 0 $color-shadow-medium;
+    box-shadow: 1px 4px 16px 0 variables.$color-shadow-medium;
   }
 }

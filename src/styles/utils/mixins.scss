@@ -1,11 +1,13 @@
+@use "variables";
+
 @mixin on-tablet {
-  @media (width >= $width-min-tablet) {
+  @media (width >= variables.$width-min-tablet) {
     @content;
   }
 }
 
 @mixin on-desktop {
-  @media (width >= $width-min-desktop) {
+  @media (width >= variables.$width-min-desktop) {
     @content;
   }
 }
@@ -29,7 +31,7 @@
 }
 
 @mixin hover($property, $toValue) {
-  transition: #{$property} $duration-transition;
+  transition: #{$property} variables.$duration-transition;
   &:hover {
     #{$property}: $toValue;
   }

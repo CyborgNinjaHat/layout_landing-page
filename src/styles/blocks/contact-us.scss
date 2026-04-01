@@ -1,6 +1,9 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
 .contact-us {
   &__wrapper {
-    @include page-grid;
+    @include mixins.page-grid;
 
     row-gap: 48px;
   }
@@ -8,11 +11,11 @@
   &__form {
     grid-column: 1 / -1;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       grid-column: span 3;
     }
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       grid-column: span 5;
     }
   }
@@ -25,24 +28,24 @@
 
     font-size: 14px;
     line-height: 20px;
-    color: $color-text-input;
+    color: variables.$color-text-input;
 
-    background-color: $color-bg-input;
+    background-color: variables.$color-bg-input;
     border: 1px solid transparent;
     border-radius: 16px;
     outline: none;
 
     &::placeholder {
-      color: $color-text-placeholder;
+      color: variables.$color-text-placeholder;
     }
 
     &:hover {
-      border-color: $color-border-hover;
+      border-color: variables.$color-border-hover;
     }
 
     &:active,
     &:focus {
-      border-color: $color-text-input;
+      border-color: variables.$color-text-input;
     }
 
     &--message {
@@ -57,11 +60,11 @@
     flex-direction: column;
     gap: 24px;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       grid-column: span 2;
     }
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       grid-column: -6 / -4;
     }
   }

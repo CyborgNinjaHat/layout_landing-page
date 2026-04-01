@@ -1,6 +1,8 @@
+@use "../utils/mixins";
+
 .detail {
   &__content {
-    @include page-grid;
+    @include mixins.page-grid;
   }
 
   &__media {
@@ -10,21 +12,21 @@
     margin-block-end: 16px;
 
     &--wide {
-      @include on-tablet {
+      @include mixins.on-tablet {
         grid-column: span 4;
       }
 
-      @include on-desktop {
+      @include mixins.on-desktop {
         grid-column: span 8;
       }
     }
 
     &--square {
-      @include on-tablet {
+      @include mixins.on-tablet {
         grid-column: span 2;
       }
 
-      @include on-desktop {
+      @include mixins.on-desktop {
         grid-column: span 4;
       }
     }
@@ -36,7 +38,7 @@
     object-fit: cover;
     object-position: center;
 
-    @include hover (transform, scale(1.15));
+    @include mixins.hover (transform, scale(1.15));
   }
 
   &__title {
@@ -54,7 +56,7 @@
     hyphens: auto;
     word-wrap: break-word;
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       grid-column: 1 / -5;
     }
   }

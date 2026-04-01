@@ -1,12 +1,14 @@
+@use "../utils/variables";
+
 .page {
   scroll-behavior: smooth;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   line-height: 1.4;
-  color: $color-text-primary;
+  color: variables.$color-text-primary;
 
   &__content {
     min-width: 320px;
-    background: $color-bg-primary;
+    background: variables.$color-bg-primary;
 
     &--overlap {
       overflow: hidden;
@@ -21,7 +23,7 @@
     inset: 0;
     transform: translateX(-100%);
 
-    transition: transform $duration-transition * 2;
+    transition: transform variables.$duration-transition * 2;
 
     &:target {
       pointer-events: all;
