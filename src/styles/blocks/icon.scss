@@ -1,0 +1,28 @@
+.icon {
+  display: block;
+  aspect-ratio: 1;
+  width: 24px;
+  background-size: cover;
+
+  @include hover(transform, scale(1.2));
+
+  @include on-tablet {
+    width: 32px;
+  }
+
+  &--phone {
+    background-image: url('/assets/images/icons/icon-phone.svg');
+  }
+
+  &--menu {
+    background-image: url('/assets/images/icons/icon-burger-menu.svg');
+
+    &:hover {
+      background-image: url('/assets/images/icons/icon-burger-menu-hover.svg');
+    }
+  }
+
+  &--close {
+    background-image: url('/assets/images/icons/icon-close.svg');
+  }
+}

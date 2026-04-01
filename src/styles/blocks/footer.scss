@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  height: 200px;
+
+  background-image: url('/assets/images/footer-bg.avif');
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+  background-size: cover;
+
+  @include on-tablet {
+    height: 480px;
+    background-image: url('/assets/images/footer-bg-tablet.avif');
+  }
+
+  @include on-desktop {
+    height: 568px;
+    background-image: url('/assets/images/footer-bg-desktop.avif');
+  }
+}

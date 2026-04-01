@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  width: 130px;
+  height: 38px;
+
+  @include on-tablet {
+    width: 187px;
+    height: 56px;
+  }
+
+  @include hover(transform, scale(1.2));
+
+  &__image {
+    aspect-ratio: 1;
+    width: 100%;
+    fill: $color-text-primary;
+
+    &--menu {
+      fill: $color-text-secondary;
+    }
+  }
+}
