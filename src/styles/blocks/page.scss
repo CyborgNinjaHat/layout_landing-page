@@ -8,7 +8,6 @@
 
   &__content {
     min-width: 320px;
-    background: variables.$color-bg-primary;
 
     &--overlap {
       overflow: hidden;
@@ -16,22 +15,14 @@
   }
 
   &__menu {
-    pointer-events: none;
-
     position: fixed;
-    z-index: 10;
+    z-index: 1;
     inset: 0;
     transform: translateX(-100%);
 
-    transition: transform variables.$duration-transition * 2;
-
-    &:target {
-      pointer-events: all;
-      transform: translateX(0%);
-    }
+    transition: transform calc(var(--duration-transition) * 2);
 
     &--open {
-      pointer-events: all;
       transform: translateX(0);
     }
   }

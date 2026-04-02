@@ -1,7 +1,10 @@
 @use "../utils/mixins";
 
 .footer {
-  width: 100%;
+  position: sticky;
+  z-index: -1;
+  bottom: 0;
+
   height: 200px;
 
   background-image: url('/assets/images/footer-bg.avif');

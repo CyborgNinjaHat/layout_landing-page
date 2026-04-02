@@ -31,7 +31,7 @@
 }
 
 @mixin hover($property, $toValue) {
-  transition: #{$property} variables.$duration-transition;
+  transition: #{$property} var(--duration-transition);
   &:hover {
     #{$property}: $toValue;
   }

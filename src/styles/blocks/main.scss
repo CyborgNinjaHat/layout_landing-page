@@ -1,6 +1,9 @@
 @use "../utils/mixins";
+@use "../utils/variables";
 
 .main {
+  background: variables.$color-bg-primary;
+
   &__content {
     display: grid;
     row-gap: 96px;

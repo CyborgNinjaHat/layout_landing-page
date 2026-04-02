@@ -15,15 +15,15 @@
     >
     <link
       rel="icon"
-      href="./favicon.svg"
+      href="/favicon.svg"
       type="image/svg+xml"
     >
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="/styles/main.scss"
     />
     <script
-      src="./scripts/main.js"
+      src="/scripts/main.js"
       type="module"
       defer
     ></script>
@@ -33,7 +33,8 @@
       <div class="container">
         <div class="header__content">
           <div class="top-bar">
-            <a class="logo" href="/" aria-label="Home">
+            <a class="logo" href="/">
+              <span class="visually-hidden">Home</span>
               <svg class="logo__image">
                 <use
                   href="/assets/images/logo.svg#logo-main"
@@ -47,13 +48,21 @@
               <a
                 href="tel:+123455555555"
                 class="icon icon--phone"
-                aria-label="Call us"
-              ></a>
+                aria-label="+123455555555"
+              >
+                <span class="icon__tooltip" aria-hidden="true">
+                  +1 (234) 555-5555
+                </span>
+              </a>
 
               <button
                 class="icon icon--menu"
                 id="menu-open"
-                aria-label="Open menu"></button>
+                aria-controls="menu"
+                aria-expanded=false
+                >
+                  <span class="visually-hidden">Open menu</span>
+              </button>
             </div>
           </div>
 
@@ -71,7 +80,8 @@
     >
       <div class="container">
         <div class="top-bar menu_top">
-          <a class="logo" href="/" aria-label="Home">
+          <a class="logo" href="/">
+            <span class="visually-hidden">Home</span>
             <svg class="logo__image logo__image--menu">
               <use
                 href="/assets/images/logo.svg#logo-menu"
@@ -84,8 +94,9 @@
           <button
             class="icon icon--close"
             id="menu-close"
-            aria-label="Close menu"
-          ></button>
+          >
+            <span class="visually-hidden">Close menu</span>
+        </button>
         </div>
 
         <div class="menu__bottom">
@@ -139,7 +150,11 @@
             </p>
           </section>
 
-          <section class="compare" aria-describedby="compare" data-aos="fade-up">
+          <section
+            class="compare"
+            aria-describedby="compare"
+            data-aos="fade-up"
+          >
             <h2
               class="section-title"
               id="compare"
@@ -147,7 +162,7 @@
               Compare Bikes
             </h2>
 
-            <ul class="compare__products">
+            <ul class="compare__product-list">
               <li class="compare__product">
                 <article class="product" data-aos="fade">
                   <img
@@ -318,7 +333,11 @@
             </div>
           </section>
 
-          <section class="contact-us" aria-describedby="contact-us" data-aos="fade-up">
+          <section
+            class="contact-us"
+            aria-describedby="contact-us"
+            data-aos="fade-up"
+          >
             <h2 class="section-title" id="contact-us">Contact us</h2>
             <div class="contact-us__wrapper">
               <form
@@ -369,36 +388,44 @@
                 </button>
               </form>
 
-              <div class="contact-us__contacts" data-aos="fade-left">
-                <section class="contact" aria-describedby="contact-phone">
-                  <h3 class="contact__title" id="contact-phone">Phone</h3>
-                  <a class="contact__link" href="tel:+123455555555">+1 234 5555-55-55</a>
-                </section>
+              <dl class="contact-us__contacts" data-aos="fade-left">
+                <div class="contact">
+                  <dt class="contact__title">Phone</dt>
+                  <dd>
+                    <a class="contact__link" href="tel:+123455555555">+1 234 5555-55-55</a>
+                  </dd>
+                </div>
 
-                <section class="contact" aria-describedby="contact-email">
-                  <h3 class="contact__title" id="contact-email">Email</h3>
-                  <a class="contact__link" href="mailto:hello@miami.com">hello@miami.com</a>
-                </section>
+                <div class="contact">
+                  <dt class="contact__title">Email</h3>
+                  <dd>
+                    <a class="contact__link" href="mailto:hello@miami.com">hello@miami.com</a>
+                  </dd>
+                </div>
 
-                <section class="contact" aria-describedby="contact-address">
-                  <h3 class="contact__title" id="contact-address">Address</h3>
-                  <a
-                    class="contact__link"
-                    href="https://maps.app.goo.gl/TsaoFi9xq4u7YTd77"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    400 first ave.<br>
-                    suite 700<br>
-                    Minneapolis, MN 55401
-                  </a>
-                </section>
+                <div class="contact">
+                  <dt class="contact__title">Address</dt>
+                  <dd>
+                    <address>
+                      <a
+                        class="contact__link"
+                        href="https://maps.app.goo.gl/TsaoFi9xq4u7YTd77"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        400 first ave.<br>
+                        suite 700<br>
+                        Minneapolis, MN 55401
+                      </a>
+                    </address>
+                  </dd>
+                </div>
               </div>
-            </div>
+            </dl>
           </section>
         </div>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer" aria-hidden="true"></footer>
   </body>
 </html>

@@ -9,4 +9,13 @@ $color-bg-button: #fff;
 $color-bg-input: #f8f8fa;
 $color-shadow-soft: #e8e8f066;
 $color-shadow-medium: #e8e8f0a3;
-$duration-transition: 450ms;
+
+:root {
+  --duration-transition: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    --duration-transition: 450ms;
+  }
+}

@@ -1,8 +1,6 @@
 @use "../utils/variables";
 
 .button {
-  cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +17,7 @@
   border-radius: 40px;
   outline: none;
 
-  transition: box-shadow variables.$duration-transition;
+  transition: box-shadow var(--duration-transition);
 
   &:hover,
   &:focus {

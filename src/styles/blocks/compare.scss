@@ -1,7 +1,7 @@
 @use "../utils/mixins";
 
 .compare {
-  &__products {
+  &__product-list {
     @include mixins.page-grid;
 
     row-gap: 40px;

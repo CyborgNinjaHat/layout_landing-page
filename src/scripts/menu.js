@@ -12,6 +12,7 @@ const elements = {
 const focusMenu = createFocusTrap(elements.overlayMenu);
 
 function setMenuState(isOpen) {
+  elements.openButton.setAttribute('aria-expanded', String(isOpen));
   elements.pageContent.classList.toggle('page__content--overlap', isOpen);
   elements.overlayMenu.classList.toggle('page__menu--open', isOpen);
   elements.overlayMenu.toggleAttribute('inert', !isOpen);

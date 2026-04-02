@@ -45,7 +45,7 @@
 
       background-color: variables.$color-text-secondary;
 
-      transition: transform variables.$duration-transition;
+      transition: transform var(--duration-transition);
     }
 
     &:hover::after {
