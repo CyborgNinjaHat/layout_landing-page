@@ -8,6 +8,7 @@
 
   &__content {
     min-width: 320px;
+    background: variables.$color-bg-primary;
 
     &--overlap {
       overflow: hidden;
