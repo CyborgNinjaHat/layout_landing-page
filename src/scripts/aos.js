@@ -6,9 +6,10 @@ import 'aos/dist/aos.css';
 const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 AOS.init({
-  duration: 600,
-  easing: 'ease-in-out',
-  once: false,
+  duration: 800,
+  offset: 100,
+  easing: 'ease-out-cubic',
+  once: true,
   disable: reducedMotionQuery.matches,
 });
 

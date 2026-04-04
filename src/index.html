@@ -13,15 +13,26 @@
       name="description"
       content="Discover MyBike - the ultimate electric bikes for urban riders. Fast, with GPS and a comfy design. Move free, shift your ride."
     >
+
     <link
       rel="icon"
       href="/favicon.svg"
       type="image/svg+xml"
+      media="(prefers-color-scheme: light)"
     >
+
+    <link
+      rel="icon"
+      href="/favicon-dark.svg"
+      type="image/svg+xml"
+      media="(prefers-color-scheme: dark)"
+    >
+
     <link
       rel="stylesheet"
       href="/styles/main.scss"
     />
+
     <script
       src="/scripts/main.js"
       type="module"
@@ -50,7 +61,7 @@
                 class="icon icon--phone"
               >
                 <span class="visually-hidden">
-                  Call +123455555555
+                  Call +1 (234) 555-5555
                 </span>
 
                 <span class="icon__tooltip" aria-hidden="true">
@@ -98,7 +109,7 @@
             class="icon icon--close"
             id="menu-close"
           >
-            <span class="visually-hidden">Close menu</span>
+            <span class="visually-hidden">Close</span>
         </button>
         </div>
 
@@ -174,7 +185,7 @@
                     decoding="async"
                     loading="lazy"
                     class="product__photo"
-                    data-aos="zoom-in"
+                    width="500"
                   >
 
                   <h3 class="product__title">Sporty 4</h3>
@@ -191,7 +202,7 @@
                     alt="Side profile of a Step-Through electric bike in Sand color, designed for urban commuting with an open frame for easy mounting."
                     decoding="async"
                     loading="lazy"
-                    data-aos="zoom-in"
+                    width="500"
                   >
 
                   <h3 class="product__title">Ride in town ST</h3>
@@ -208,7 +219,7 @@
                     alt="Side profile of a Agile ride 3 electric bike in white, showing the minimalist agile frame, disc brakes, and all-black components."
                     decoding="async"
                     loading="lazy"
-                    data-aos="zoom-in"
+                    width="500"
                   >
 
                   <h3 class="product__title">Agile ride 3</h3>
@@ -231,6 +242,7 @@
                       alt="A smartphone mounted on the center of sleek black bicycle handlebars, displaying a fitness tracking app showing 33.5 kilometers traveled, 385 calories burned, and a ride time of 1 hour and 17 minutes."
                       decoding="async"
                       loading="lazy"
+                      width="500"
                     >
                   </div>
 
@@ -241,6 +253,7 @@
                       alt="Close-up macro shot of a matte black bicycle brake lever and handlebar grip against a neutral gray gradient background, highlighting the sleek industrial design and mounting screws."
                       decoding="async"
                       loading="lazy"
+                      width="500"
                     >
                   </div>
 
@@ -264,6 +277,7 @@
                       alt="A low-angle, close-up shot of the bottom bracket and rear wheel of a matte black bicycle, showcasing the belt drive system, disc brakes, pedals with orange reflectors, and an integrated kickstand."
                       decoding="async"
                       loading="lazy"
+                      width="500"
                     >
                   </div>
 
@@ -274,6 +288,7 @@
                       alt="A Cowboy brand electric bicycle with a cream-colored frame and matte black handlebars, featuring a distinctive integrated vertical LED headlight glowing on the head tube."
                       decoding="async"
                       loading="lazy"
+                      width="500"
                     >
                   </div>
 
@@ -297,6 +312,7 @@
                       alt="Close-up side view of a Cowboy electric bike's handlebars and stem, showcasing the matte black finish, integrated brake cable routing, and the smooth transition to the cream-colored head tube."
                       decoding="async"
                       loading="lazy"
+                      width="500"
                     >
                   </div>
 
@@ -307,6 +323,7 @@
                       alt="A rear three-quarter view of a cream Cowboy electric bike, showing the black saddle, the removable battery pack with an integrated glowing red LED tail light, and the sleek minimalist frame design."
                       decoding="async"
                       loading="lazy"
+                      width="500"
                     >
                   </div>
 
@@ -400,7 +417,7 @@
                 </div>
 
                 <div class="contact">
-                  <dt class="contact__title">Email</h3>
+                  <dt class="contact__title">Email</dt>
                   <dd>
                     <a class="contact__link" href="mailto:hello@miami.com">hello@miami.com</a>
                   </dd>
@@ -423,8 +440,8 @@
                     </address>
                   </dd>
                 </div>
-              </div>
-            </dl>
+              </dl>
+            </div>
           </section>
         </div>
       </div>
